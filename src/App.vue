@@ -13,17 +13,15 @@
       </div>
     </nav>
     <h1>{{ title }}</h1>
-    <blog-cards />
+    <Posts></Posts>
   </div>
 </template>
 
 <script>
-import BlogCards from "@/BlogCards";
+import Posts from "@/Posts.vue";
 
 export default {
-  components: {
-    BlogCards,
-  },
+  components: { Posts },
   data: () => ({
     title: "Fima's Blog",
     navTitle: "Blogy",
